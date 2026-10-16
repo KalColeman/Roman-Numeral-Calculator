@@ -21,3 +21,7 @@ int Calculator::divide(int a, int b) {
 int Calculator::multiply(int a, int b) {
     return a * b;
 }
+
+int Calculator::square(int a) {
+    return a * a;
+}
