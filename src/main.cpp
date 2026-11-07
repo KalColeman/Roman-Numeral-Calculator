@@ -8,14 +8,9 @@ int main () {
     Converter converter;
     Validator validation;
 
-    std::cout << validation.valid("MCMXCIV") << std::endl;
-    std::cout << validation.valid("XCIX") << std::endl;
-    std::cout << validation.valid("XLI") << std::endl;
-    std::cout << validation.valid("IIX") << std::endl;
-    std::cout << validation.valid("IXX") << std::endl;
-    std::cout << validation.valid("XXC") << std::endl;
-    std::cout << validation.valid("IL") << std::endl;
-    std::cout << validation.valid("VX") << std::endl;
-    std::cout << validation.valid("VV") << std::endl;
-    std::cout << validation.valid("IIII") << std::endl;
+    std::cout << converter.romanToInt("MCMXCIV") << std::endl;
+    std::cout << converter.romanToInt("III") << std::endl;
+    std::cout << converter.intToRoman(1) << std::endl;
+    std::cout << converter.intToRoman(3999) << std::endl;
+    std::cout << converter.intToRoman(4000) << std::endl;
 }
